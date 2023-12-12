@@ -64,5 +64,64 @@ export const store = reactive({
             titolo : "FILM PRODUCTION",
             type : "Blaxploitation"
         },
+    ],
+    teamCard : [
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "FABRICIO GUERRA",
+            text : "Main Director"
+        },
+        {
+            teamSrc : "../../public/img/Team-02.jpg",
+            titolo : "UMBERTO PAGODA",
+            text : "Main Writer"
+        },
+        {
+            teamSrc : "../../public/img/Team-03.jpg",
+            titolo : "GLORIA RICCASSO",
+            text : "Main Producer"
+        },
+        {
+            teamSrc : "../../public/img/Team-04.jpg",
+            titolo : "LIO NAPOIN",
+            text : "Cameraman"
+        },
+    ],
+    dailyCard : [
+        {
+            dailySrc : "../../public/img/Team-01.jpg",
+            titolo : "RECAP YOUR LATEST COMPANY EVENT",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et"
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "HOW TO EDIT A FILM SCORE TO SERVE",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel consequatur voluptates ab voluptas facere quo mollitia vitae."
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "ARE YOU READY TO MAKE IT AWESOME",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel consequatur voluptates"
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "LAST VIDEO WEBSITE YOU NEED FOR",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel consequatur voluptates ab voluptas facere quo mollitia vitae."
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "BAND UPRISING TO CULT STATUS",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel"
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "BRINGING THE STAGE TO LIFE",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel consequatur"
+        },
+        {
+            teamSrc : "../../public/img/Team-01.jpg",
+            titolo : "CADENZE RIOS PICKED FOR THE NEXT PICTURE",
+            text : "Lorem ipsum dolor sit amet. At magni recusandae ut facere necessitatibus et autem saepe vel consequatur voluptates ab voluptas facere quo mollitia vitae."
+        },
     ]
 });
