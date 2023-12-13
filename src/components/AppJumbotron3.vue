@@ -38,6 +38,26 @@ export default {
             </div>
             <div class="profilo">
                 <div class="img">
+                    <img src="../../public/img/03.jpg">
+                </div>
+                <div class="descr">
+                    <p>JOHN DOE</p>
+                    <span>deigner</span>
+                </div>
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div id="wrapperJumbo">
+            <div class="icn">
+                <img src="../../public/img/image (20).svg">
+            </div>
+            <div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia officiis est possimus. consectetur adipisicing elit. Deserunt quo commodi eos aut ratione repellat, consectetur quos libero quod facere ipsum explicabo ab optio repellendus odit similique atque! Est, provident?
+                </span>
+            </div>
+            <div class="profilo">
+                <div class="img">
                     <img src="../../public/img/02.jpg">
                 </div>
                 <div class="descr">
@@ -47,8 +67,26 @@ export default {
             </div>
         </div>
     </swiper-slide>
-    <swiper-slide><p>CIAO 2</p></swiper-slide>
-    <swiper-slide>CIAO 3</swiper-slide>
+    <swiper-slide>
+        <div id="wrapperJumbo">
+            <div class="icn">
+                <img src="../../public/img/image (20).svg">
+            </div>
+            <div>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia officiis est possimus. consectetur adipisicing elit. Deserunt quo commodi eos aut ratione repellat, consectetur quos libero quod facere ipsum explicabo ab optio repellendus odit similique atque! Est, provident?
+                </span>
+            </div>
+            <div class="profilo">
+                <div class="img">
+                    <img src="../../public/img/03.jpg">
+                </div>
+                <div class="descr">
+                    <p>JOHN DOE</p>
+                    <span>deigner</span>
+                </div>
+            </div>
+        </div>
+    </swiper-slide>
 </swiper>
 </template>
 

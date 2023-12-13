@@ -70,6 +70,7 @@
 }
 .bgFoot{
     background-color: $darkTheme;
+    padding: 2rem;
 }
 .one , .two , .three , .four{
     display: flex;
@@ -82,6 +83,8 @@ p{
 .copy{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 img{
     width: 100%;
