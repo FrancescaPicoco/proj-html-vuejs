@@ -53,15 +53,24 @@
             <button>SUBSCRIBE</button>
         </div>
     </div>
+    <hr>
+    <span class="copy"> &copy; All Rights Reserved. Developed By TemplateMela</span>
 
 </template>
 
 <style>
 .footerWrapper{
     display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .one , .two , .three , .four{
     display: flex;
     flex-direction: column;
+}
+.copy{
+    display: flex;
+    justify-content: center;
 }
 </style>

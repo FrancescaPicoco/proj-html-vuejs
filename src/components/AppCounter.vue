@@ -1,4 +1,8 @@
-<script></script>
+<script>
+export default {
+    name:'AppCounter',
+}
+</script>
 
 <template>
     <div id="counterWrapper">
@@ -22,13 +26,19 @@
 </template>
 
 <style scoped>
+
 #counterWrapper{
-    height: 30vh;
-    background-color: black;
+    height: 30vh;   
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../../public/img/Parallax-01.jpg");
+    min-height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
     margin: 0 3rem;
