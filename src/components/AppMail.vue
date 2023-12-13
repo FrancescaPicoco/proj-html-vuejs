@@ -19,11 +19,15 @@
             <div >
                 <input class="textMsg" type="text" placeholder="Enter Your Message">
             </div>
+            <div>
+                <button>SUBMIT</button>
+            </div>
         </div>
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+ @use '../styles/partials/_variables.scss' as *;
 span{
     line-height: 1.5;
 }
@@ -31,12 +35,13 @@ span{
     display: flex;
 }
 .mailWrapper{
-    width: 70%;
+    padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 .right , .left{
-    width: 40%;
+    width: 50%;
     text-align: left;
     margin: 1.5rem;
 }
@@ -44,13 +49,21 @@ span{
     flex-direction: column;
 }
 input{
-    padding: 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem ;
     margin: 1rem;
-    background-color: rgb(158, 178, 198);
+    background-color: rgb(223, 223, 223);
     border: none;
+    font-size: 18px;
 }
 .textMsg{
     padding-bottom: 10rem;
-    padding-right: 14rem;
+    padding-right: 20rem;
+}
+button{
+    background-color: $darkTheme;
+    color: white;
+    padding: 1rem 15rem;
+    margin-left: 20px;
+    border-radius: 0;
 }
 </style>

@@ -29,11 +29,16 @@ export default {
 .card{
  width: calc((100% / 4) - 4rem);
  margin: 2rem;
- background-color: slategray;
  color: black;
+}
+.cardDescr{
+  text-align: center;
 }
 img{
  width: 100%;
  object-fit: contain;
+}
+span{
+  color: slategrey;
 }
 </style>

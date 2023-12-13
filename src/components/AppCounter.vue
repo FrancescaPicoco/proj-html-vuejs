@@ -1,13 +1,30 @@
 <script>
 export default {
     name:'AppCounter',
+    // data() {
+    //     return {
+    //         modules: [Autoplay, Navigation]
+    //     };
+    // },
+    // methods: {
+    //     count(){
+    //       var counter = 0;
+    //       setInterval(() => {
+    //         counter++
+    //         document.getElementById("uno").innerHTML += counter
+    //       } , 1000)
+    //     }
+    // },
+    // mounted() {
+    //     count()
+    // }
 }
 </script>
 
 <template>
     <div id="counterWrapper">
         <div>
-            <h1>780</h1>
+            <h1 id="uno"></h1>
             <span>SATISFIED CLIENTS</span>
         </div>
         <div>

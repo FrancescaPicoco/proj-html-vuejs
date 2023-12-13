@@ -29,8 +29,18 @@ export default {
 .card{
  width: calc((100% / 3) - 5rem);
  margin: 2.5rem;
- background-color: slategray;
  color: black;
+}
+.cardTop{
+  display: flex;
+  justify-content: center;
+}
+.cardDescr{
+  text-align: center;
+}
+span{
+  font-size: 18px;
+  color: slategrey;
 }
 img{
  width: 20%;

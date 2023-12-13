@@ -33,13 +33,15 @@ export default {
                 <img src="../../public/img/image (20).svg">
             </div>
             <div>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia officiis est possimus. Dignissimos at possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo commodi eos aut ratione repellat, consectetur quos libero quod facere ipsum explicabo ab optio repellendus odit similique atque! Est, provident?
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia officiis est possimus. consectetur adipisicing elit. Deserunt quo commodi eos aut ratione repellat, consectetur quos libero quod facere ipsum explicabo ab optio repellendus odit similique atque! Est, provident?
                 </span>
             </div>
             <div class="profilo">
-                <img src="../../public/img/02.jpg">
+                <div class="img">
+                    <img src="../../public/img/02.jpg">
+                </div>
                 <div class="descr">
-                    <h3>JOHN DOE</h3>
+                    <p>JOHN DOE</p>
                     <span>deigner</span>
                 </div>
             </div>
@@ -47,42 +49,29 @@ export default {
     </swiper-slide>
     <swiper-slide><p>CIAO 2</p></swiper-slide>
     <swiper-slide>CIAO 3</swiper-slide>
-
-<!-- <div class="positioning">    
-    <div id="wrapperJumbo">
-        <div class="icn">
-           <img src="../../public/img/image (20).svg">
-        </div>
-        <div>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia officiis est possimus. Dignissimos at possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo commodi eos aut ratione repellat, consectetur quos libero quod facere ipsum explicabo ab optio repellendus odit similique atque! Est, provident?
-            </span>
-        </div>
-        <div class="profilo">
-            <img src="../../public/img/02.jpg">
-            <div class="descr">
-                <h3>JOHN DOE</h3>
-                <span>deigner</span>
-            </div>
-        </div>
-    </div>
-</div> -->
 </swiper>
 </template>
 
 <style scoped>
 #wrapperJumbo{
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 15%;
+    line-height: 2;
 }
 .mySwiper{
-    min-height: 70vh;   
+    min-height: 90vh;   
     background-image: url("../../public/img/Parallax-02.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.img > img{
+    border-radius: 50px;
+    width: 60px;
+    margin: 1rem;
 }
 /* .positioning > img{
     width: 100%;
@@ -105,9 +94,9 @@ export default {
 .desc{
     display: flex;
 }
-span , h3{
+span , p{
     color: white;
-    margin-top: 0;
+    text-align: center;
 }
 
 </style>

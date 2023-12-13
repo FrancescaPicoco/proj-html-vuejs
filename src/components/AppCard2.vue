@@ -19,7 +19,7 @@ export default {
         <img :src="details2.watchSrc">
       </div>
       <div class="cardDescr">
-        <h3>{{ details2.titolo }}</h3>
+        <p>{{ details2.titolo }}</p>
         <span>{{ details2.type }}</span>
       </div>
     </div>  
@@ -28,7 +28,7 @@ export default {
 
 .card{
  width: calc((100% / 3) - 5rem);
- margin: 2.5rem;
+ margin: 0 2.5rem;
  color: black;
 }
 img{
@@ -36,6 +36,11 @@ img{
 }
 .cardDescr{
     text-align: center;
+    margin-bottom: 1rem;
+}
+p{
+  font-size: 20px;
+  margin-bottom: 0;
 }
 span{
     color: slategrey;

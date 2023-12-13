@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <div id="headerWrapper">
+    <div id="fixhead">
+        <div id="headerWrapper">
         <div>
             <img id="logo" src="../../public/img/logo.svg">
         </div>
@@ -32,18 +33,26 @@
             <img id="icn" src="../../public/img/image (11).svg">
             <img id="icn" src="../../public/img/image (12).svg">
         </div>       
+        </div>
     </div>
+    
 </template>
 
 <style lang="scss" scoped>
   @use '../styles/partials/_variables.scss' as *;
-
+#fixhead{
+    position: relative;
+}
 #headerWrapper{
-   height: 15vh;
+    width: 100%;
+   position: absolute;
+   height: 13vh;
    background-color: $whiteTheme;
    display: flex;
    align-items: center;
    justify-content: space-between;
+   position: fixed;
+   z-index: 999;
 }
 #logo{
     width: 90%;
