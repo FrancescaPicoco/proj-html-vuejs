@@ -1,48 +1,61 @@
 <script>
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  // Import Swiper styles
-  import 'swiper/css';
-  export default {
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    data() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-      };
-    },
-  };
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import '../styles/general.scss';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
+    };
+  },
+};
 </script>
 
 <template>
   <swiper
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
+    :spaceBetween="30"
+    :centeredSlides="true"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+    :pagination="{
+      clickable: true,
+    }"
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper"
   >
     <swiper-slide>
-      <img src="../../public/img/Gallery-01.jpg">
+      <img src="../../public/img/Parallax-02.jpg">
+      
     </swiper-slide>
     <swiper-slide>
-      <img src="../../public/img/Gallery-02.jpg">
+      <img src="../../public/img/Parallax-03.jpg">
     </swiper-slide>
-    <swiper-slide>Slider 3</swiper-slide>
-    ...
+    <div class="cs">
+      <span>CINEMA STUDIO</span>
+      <p>ACTION AND INSPIRE PEOPLE</p>
+      <button>READ MORE</button>
+    </div>
   </swiper>
 </template>
 
 <style scoped>
-.swiper {
-  width: 600px;
-  height: 300px;
-}</style>
+.mySwiper{
+  position: relative;
+}
+.cs{
+  position: absolute;
+  top: 0;
+}
+
+</style>

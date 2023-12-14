@@ -1,4 +1,25 @@
 <script>
+ const counterElement = document.getElementById('counter');
+        const targetValue = 10000;
+        const duration = 4000; // 4 seconds
+        const interval = 10; // Update every 10 milliseconds
+
+        const increment = (targetValue / (duration / interval));
+
+        let currentValue = 0;
+
+        const updateCounter = () => {
+            currentValue += increment;
+
+            if (currentValue >= targetValue) {
+                currentValue = targetValue;
+                clearInterval(counterInterval);
+            }
+
+            counterElement.textContent = Math.round(currentValue);
+        };
+
+        const counterInterval = setInterval(updateCounter, interval);
 export default {
     name:'AppCounter',
     // data() {
@@ -23,7 +44,7 @@ export default {
 
 <template>
     <div id="counterWrapper">
-        <div>
+         <!-- <div>
             <h1 id="uno"></h1>
             <span>SATISFIED CLIENTS</span>
         </div>
@@ -38,7 +59,7 @@ export default {
         <div>
             <h1>712</h1>
             <span>OUR AWARDS</span>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -57,11 +78,23 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
+/* h1{
     margin: 0 3rem;
     font-size: 100px;
 }
 div{
     text-align: center;
-}
+} */
+body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #counter {
+            font-size: 3em;
+            font-family: 'Arial', sans-serif;
+        }
 </style>

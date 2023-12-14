@@ -56,13 +56,16 @@ export default {
 
 <style scoped>
 .mySwiper{
-    height: 30vh;
+    height: 40vh;
     background-image: url("../../public/img/Parallax-03.jpg");
     min-height: 30vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 3rem;
 }
-
+img{
+  margin-top: 27%;
+}
 </style>

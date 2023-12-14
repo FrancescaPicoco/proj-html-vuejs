@@ -17,7 +17,7 @@ export default {
 <template>
     <div class="topActions">
         <span>PELICULA STUDIO</span>
-        <h1>THIS IS WHAT WE DO</h1>
+        <p>THIS IS WHAT WE DO</p>
     </div>
     <div id="cardWrapper">
         <AppCard v-for="azioni in store.actionsCard" :details="azioni"/>
@@ -26,12 +26,13 @@ export default {
 
 <style scoped>
 .topActions{
-    padding: 3em;
+    padding: 3em 3rem 0 3rem;
     text-align: center;
 }
-h1{
-    margin-top: 0;
+p{
+    margin-top: 2rem;
     font-size: 60px;
+    font-weight: bold;
 }
 #cardWrapper{
     display: flex;

@@ -1,4 +1,18 @@
-<script></script>
+<script>
+export default{
+    data(){
+
+    },
+    mounted() {
+		this.clean();
+	},
+    methods : {
+    clean(){  
+    document.getElementById("delete").reset();
+} 
+   }
+}
+</script>
 
 <template>
     <div class="mailWrapper">
@@ -9,18 +23,18 @@
         </div>
         <div class="right">
             <div class="top">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Name" id="delete" value="" v-model="input">
+                <input type="email" placeholder="Your Email" class="myInput" value="">
             </div>
             <div class="bottom">
-                <input type="text" placeholder="Mobile number">
-                <input type="text" placeholder="Your Pincode">
+                <input type="text" placeholder="Mobile number" class="myInput">
+                <input type="text" placeholder="Your Pincode" class="myInput">
             </div>
             <div >
-                <input class="textMsg" type="text" placeholder="Enter Your Message">
+                <input class="textMsg myInput" type="text" placeholder="Enter Your Message">
             </div>
             <div>
-                <button>SUBMIT</button>
+                <button onclick="this.clean()">SUBMIT</button>
             </div>
         </div>
     </div>
